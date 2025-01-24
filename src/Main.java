@@ -28,5 +28,13 @@ public class Main {
         System.out.println("Сумма чисел трехзначного числа "+three+
                 " равна "+(first+second+third));
 
+        // Задание 4
+        System.out.println();
+        System.out.println("Задание 4:");
+        int romashka=4899, map=157;
+        int sale=(romashka+map)/100*90;
+        int discont=romashka+map-sale;
+        System.out.println("Сумма двух покупок с учетом скидки "+sale+
+                " рублей.\n Сумма скидки двух покупок "+discont+" рублей.");
     }
 }
