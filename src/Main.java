@@ -6,5 +6,6 @@ public class Main {
         int a=47, b=13;
         int c=a/b, d=a%b;
         System.out.println("Выходит "+c+" и "+d+" в остатке");
+
     }
 }
