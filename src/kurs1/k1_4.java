@@ -43,5 +43,101 @@ public class k1_4 {
             num4 *= f;
         }
         System.out.println();
+
+        // Задача 5
+        System.out.println();
+        System.out.println("Задача №5:");
+        int month135781012 = 31, month46911 = 30, month2 = 28;
+        int year = 12, YYY = 1;
+        int week = 7, day = 1;
+        boolean ln = false, nw = false;
+        while (YYY <= year) {
+            if (YYY == 1 || YYY == 3 || YYY == 5 || YYY == 7 || YYY == 8 || YYY == 10 || YYY == 12) {
+                System.out.println();
+                if (YYY == 1) {
+                    day = 1;
+                } else if (YYY == 3) {
+                    day = day - month2;
+                } else {
+                    if (day - month135781012 == 0) {
+                        day = 1;
+                    } else {
+                        if (nw == true) {
+                            day = 0;
+                            nw = false;
+                        } else {
+                            if (YYY == 8) {
+                                day = day - month135781012;
+                            } else {
+                                day = day - month46911;
+                            }
+                        }
+                    }
+                }
+                while (day <= month135781012) {
+                    if (ln == true) {
+                        System.out.println("     " + (day + 1) + "." + YYY);
+                        ln = false;
+
+                    } else {
+                        if (day == month135781012) {
+                            System.out.println(day + "." + YYY);
+                            ln = true;
+                            nw = true;
+                        } else {
+                            System.out.println(day + "." + YYY + " " + (day + 1) + "." + YYY);
+                            ln = false;
+                        }
+                    }
+                    day += week;
+                }
+
+            }
+
+
+            if (YYY == 4 || YYY == 6 || YYY == 9 || YYY == 11) {
+
+                System.out.println();
+                day = day - month135781012;
+                while (day <= month46911) {
+                    if (ln == true) {
+                        System.out.println("     " + day + "." + YYY);
+
+                    }
+                    if (day == month46911) {
+                        System.out.println(day + "." + YYY);
+                        ln = true;
+                        nw = true;
+                    } else {
+                        System.out.println(day + "." + YYY + " " + (day + 1) + "." + YYY);
+                        ln = false;
+                    }
+                    day += week;
+                }
+            }
+
+            if (YYY == 2) {
+
+                System.out.println();
+                day = day - month135781012;
+                while (day <= month2) {
+                    if (ln == true) {
+                        System.out.println("     " + day + "." + YYY);
+
+                    }
+                    if (day == month2) {
+                        System.out.println(day + "." + YYY);
+                        ln = true;
+                    } else {
+                        System.out.println(day + "." + YYY + " " + (day + 1) + "." + YYY);
+                        ln = false;
+                    }
+                    day += week;
+                }
+            }
+
+            YYY += 1;
+        }
     }
 }
+
