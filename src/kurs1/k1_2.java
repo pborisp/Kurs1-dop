@@ -81,6 +81,7 @@ public class k1_2 {
                 } else {
                     System.out.println(B);
                     System.out.println(A);
+
                 }
             }
         }
