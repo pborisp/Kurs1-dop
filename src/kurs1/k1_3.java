@@ -2,7 +2,7 @@ package kurs1;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class k1_2 {
+public class k1_3 {
     public static void main(String[] args) {
 
         //Задача 1
@@ -85,5 +85,15 @@ public class k1_2 {
                 }
             }
         }
+        //Задача 6
+        System.out.println();
+        System.out.println("Задача №6:");
+        int time = ThreadLocalRandom.current().nextInt(28001);
+        int workTime = 28800;
+        int timeSec = workTime - time;
+        float timeHour = Math.round(timeSec/60f/60f);
+        System.out.println("Текущее время: " + time);
+        System.out.println("До конца рабочего дня осталось: " + timeSec + " секунд");
+        System.out.println("До конца рабочего дня осталось: " + timeHour + " часа(ов)");
     }
 }
