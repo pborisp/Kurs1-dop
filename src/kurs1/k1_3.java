@@ -93,7 +93,7 @@ public class k1_3 {
         int timeSec = workTime - time;
         float timeHour = Math.round(timeSec/60f/60f);
         System.out.println("Текущее время: " + time);
-        System.out.println("До конца рабочего дня осталось: " + timeSec + " секунд");
-        System.out.println("До конца рабочего дня осталось: " + timeHour + " часа(ов)");
+        System.out.println("До конца рабочего дня осталось: " + timeSec + " секунд.");
+        System.out.println("До конца рабочего дня осталось: " + timeHour + " часа(ов).");
     }
 }
