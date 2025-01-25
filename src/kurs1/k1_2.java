@@ -1,5 +1,7 @@
 package kurs1;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class k1_2 {
     public static void main(String[] args) {
 
@@ -22,6 +24,15 @@ public class k1_2 {
             System.out.println("Число " + dr + " ближе к " + k + " чем число " + pr);
         } else {
             System.out.println("Число " + pr + " ближе к " + k + " чем число " + dr);
+        }
+        //Задача 3
+        System.out.println();
+        System.out.println("Задача №3:");
+        int Ram = ThreadLocalRandom.current().nextInt(156);
+        if (Ram>=22 && Ram <= 99){
+            System.out.println("Число "+Ram+" попало в интервал");
+        } else {
+            System.out.println("Число "+Ram+" не попало в интервал");
         }
     }
 }
