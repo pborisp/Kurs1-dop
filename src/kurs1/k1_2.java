@@ -48,6 +48,7 @@ public class k1_2 {
                 System.out.println(x2+" наибольшее из членов числа "+xxx);
             } else {
                 System.out.println(x3+" наибольшее из членов числа "+xxx);
+
             }
         }
     }
