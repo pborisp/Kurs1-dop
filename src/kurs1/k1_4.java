@@ -30,7 +30,17 @@ public class k1_4 {
         int count3 = 5, num = 90;
         while (num >= 0) {
             System.out.print(num + "  ");
-            num -=count3;
+            num -= count3;
+        }
+        System.out.println();
+
+        // Задача 4
+        System.out.println();
+        System.out.println("Задача №4:");
+        int count4 = 10, f = 2, num4 = 2;
+        for (int ii = 0; ii < count4; ii++) {
+            System.out.print(num4 + "  ");
+            num4 *= f;
         }
         System.out.println();
     }
