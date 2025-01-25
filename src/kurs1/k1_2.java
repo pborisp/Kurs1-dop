@@ -28,11 +28,27 @@ public class k1_2 {
         //Задача 3
         System.out.println();
         System.out.println("Задача №3:");
-        int Ram = ThreadLocalRandom.current().nextInt(156);
-        if (Ram>=22 && Ram <= 99){
+        int Ram = 3 + ThreadLocalRandom.current().nextInt(156);
+        if (Ram >= 22 && Ram <= 99){
             System.out.println("Число "+Ram+" попало в интервал");
         } else {
             System.out.println("Число "+Ram+" не попало в интервал");
+        }
+        //Задача 4
+        System.out.println();
+        System.out.println("Задача №4:");
+        int xxx = 100 + ThreadLocalRandom.current().nextInt(900);
+        int x1 = xxx / 100;
+        int x2 = xxx / 10 % 10;
+        int x3 = xxx % 10;
+        if (x1 >= x2 && x1 > x3){
+            System.out.println(x1+" наибольшее из членов числа "+xxx);
+        } else {
+            if (x2 > x3){
+                System.out.println(x2+" наибольшее из членов числа "+xxx);
+            } else {
+                System.out.println(x3+" наибольшее из членов числа "+xxx);
+            }
         }
     }
 }
