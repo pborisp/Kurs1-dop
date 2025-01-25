@@ -22,6 +22,16 @@ public class k1_4 {
             System.out.print(firstNumber + "  ");
             firstNumber += n;
         }
+        System.out.println();
 
+        // Задача 3
+        System.out.println();
+        System.out.println("Задача №3:");
+        int count3 = 5, num = 90;
+        while (num >= 0) {
+            System.out.print(num + "  ");
+            num -=count3;
+        }
+        System.out.println();
     }
 }
