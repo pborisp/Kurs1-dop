@@ -16,18 +16,9 @@ public class k1_2 {
         //Задача 2
         System.out.println();
         System.out.println("Задача №2:");
-        double pr = 11.1, dr = 9.99;
+        double pr = 11.1, dr = 4;
         double k = 10;
-        double pp, dd;
-        pp = pr - k;
-        dd = dr - k;
-        if (pp < 0) {
-            pp *= -1;
-        }
-        if (dd < 0) {
-            dd *= -1;
-        }
-        if (pp > dd) {
+        if (Math.abs(dr - k) < Math.abs(pr - k)) {
             System.out.println("Число " + dr + " ближе к " + k + " чем число " + pr);
         } else {
             System.out.println("Число " + pr + " ближе к " + k + " чем число " + dr);
