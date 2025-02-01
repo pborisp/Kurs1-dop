@@ -81,5 +81,24 @@ public class k1_6 {
             }
             System.out.println();
         }
+        System.out.println();
+
+        // Задание 4
+        System.out.println("Задание 4:");
+        int maximum = -99;
+        start = -99;
+        end = 99;
+        int[][] masXX = new int[masX][masY];
+        for (i = 0; i < masY; i++) {
+            for (int j = 0; j < masX; j++) {
+                double x = Math.random() * (end - start) + start;
+                masXX[j][i] = (int) x;
+                System.out.print(" " + masXX[j][i] + " ");
+                maximum = Math.max(maximum, masXX[j][i]);
+            }
+            System.out.println();
+        }
+        System.out.println("Максимальный элемент массива равен: " + maximum);
+        System.out.println();
     }
 }
