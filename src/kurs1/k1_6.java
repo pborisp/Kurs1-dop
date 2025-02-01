@@ -64,5 +64,22 @@ public class k1_6 {
         } else {
             System.out.println("Повторяющихся элементов нет");
         }
+        System.out.println();
+
+        // Задание 3
+        System.out.println("Задание 3:");
+        int masX = 5;
+        int masY = 8;
+        start = 10;
+        end = 99;
+        int[][] masX2 = new int[masX][masY];
+        for (i = 0; i < masY; i++) {
+            for (int j = 0; j < masX; j++) {
+              double x = Math.random() * (end - start) + start;
+              masX2[j][i] = (int) x;
+              System.out.print(" " + masX2[j][i] + " ");
+            }
+            System.out.println();
+        }
     }
 }
