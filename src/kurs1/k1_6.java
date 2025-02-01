@@ -38,8 +38,7 @@ public class k1_6 {
         }
         System.out.println();
         int countX = 1; // максимальное значение счетчика
-        double number; // значение одинаковых чисел
-        int numberCount = 0; // счетчик одинаковых чисел
+        int numberCount; // счетчик одинаковых чисел
         double numberX = 0; // значение числа, повторяющегося чаще всех
         double numberY = 0; // значение числа, с одинаковым кол-вом повторений
         int y, z; // индексы
@@ -87,7 +86,6 @@ public class k1_6 {
         System.out.println("Задание 4:");
         int maximum = -99;
         start = -99;
-        end = 99;
         int[][] masXX = new int[masX][masY];
         for (i = 0; i < masY; i++) {
             for (int j = 0; j < masX; j++) {
@@ -131,7 +129,6 @@ public class k1_6 {
 
         // Задание 6
         System.out.println("Задание 6:");
-        int max2 = 0;
         start = 0;
         end = 9;
         masX = 6;
