@@ -115,5 +115,41 @@ public class k1_5 {
             numFibo[i] = numFibo[i - 1] + numFibo[i - 2];
             System.out.print(" " + numFibo[i] + " ");
         }
+        System.out.println();
+
+        // Задание 6
+        System.out.println("Задание 6:");
+        size = 10;
+        int[] numX = new int[size];
+        for (i = 0; i < size; i++) {
+            numX[i] = (i + 1) * (i + 1);
+            System.out.print(" " + numX[i] + " ");
+        }
+        System.out.println();
+        for (i = 0; i < size; i++) {
+            numX[i] = (i + 1) * (i + 1);
+            if ((i % 2) != 0) {
+                numX[i] *= (-1);
+            }
+            System.out.print(" " + numX[i] + " ");
+        }
+        System.out.println();
+        numX[0] = 1;
+        System.out.print(" " + numX[0] + " ");
+        for (i = 1; i < size; i++) {
+            numX[i] = numX[i - 1] * (- 1);
+            System.out.print(" " + numX[i] + " ");
+        }
+        System.out.println();
+        for (i = 0; i < size; i = i + 2) {
+            if (i > 0) {
+                numX[i] = numX[i-2] + 1;
+            } else {
+                numX[i] = 1;
+            }
+            numX[i + 1] = 0;
+            System.out.print(" " + numX[i] + "  " + numX[i + 1] + " ");
+        }
+        System.out.println();
     }
 }
