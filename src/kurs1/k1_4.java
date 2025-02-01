@@ -44,7 +44,7 @@ public class k1_4 {
         }
         System.out.println();
 
-        // Задача 5
+        // Задача 5!!!!!
         System.out.println();
         System.out.println("Задача №5:");
         int month135781012 = 31, month46911 = 30, month2 = 28;
@@ -138,6 +138,29 @@ public class k1_4 {
 
             YYY += 1;
         }
+        System.out.println();
+
+        // Задача 5!!!!!
+        System.out.println();
+        System.out.println("Задача №6:");
+        int ticket = 999999;
+        int lack = 0;
+        int left;
+        int right;
+        int x1, x2;
+        int i;
+        for (i = 0; i <= ticket; i++) {
+            if (i>999) {
+                left = i / 1000;
+                right = i % 1000;
+                x1 = left / 100 + left / 10 % 10 + left % 10;
+                x2 = right /100 + right / 10 % 10 + right % 10;
+                if (x1 == x2) {
+                    lack++;
+                }
+            }
+        }
+        System.out.println("Количество счастливых билетов в рулоне: " + lack + " шт");
     }
 }
 
