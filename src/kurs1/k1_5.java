@@ -41,5 +41,39 @@ public class k1_5 {
             }
             System.out.print(" " + nums2[i] + " ");
         }
+        System.out.println();
+        System.out.println();
+
+        // Задание 3
+        System.out.println("Задание 3:");
+        size = 5;
+        int max = 5;
+        int summa1 = 0, summa2 = 0;
+        int[] mass1 = new int[size];
+        int[] mass2 = new int[size];
+        for (i = 0; i < size; i++) {
+            double random1 = Math.random() * max + 1;
+            double random2 = Math.random() * max + 1;
+            mass1[i] = (int) random1;
+            mass2[i] = (int) random2;
+            System.out.print(" " + mass1[i] + " ");
+        }
+        System.out.println();
+        for (i = 0; i < size; i++) {
+            System.out.print(" " + mass2[i] + " ");
+            summa1 += mass1[i];
+            summa2 += mass2[i];
+        }
+        System.out.println();
+        double sA1 = (double) summa1 / size;
+        double sA2 = (double) summa2 / size;
+        System.out.println("Средние арифметические массивов: " + sA1 + " и " + sA2);
+        if (sA1 > sA2) {
+            System.out.println("Среднее арифметическое первого массива больше");
+        } else if (sA1 != sA2) {
+            System.out.println("Среднее арифметическое второго массива больше");
+        } else {
+            System.out.println("Средние арифметические первого и второго массивов равны");
+        }
     }
 }
