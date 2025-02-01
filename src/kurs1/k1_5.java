@@ -26,6 +26,20 @@ public class k1_5 {
 
         // Задание 2
         System.out.println("Задание 2:");
-
+        size = 8;
+        int sizeNumber = 10;
+        int[] nums2 = new int[size];
+        for (i = 0; i < size; i++) {
+            double number = Math.random() * sizeNumber + 1;
+            nums2[i] = (int) number;
+            System.out.print(" " + nums2[i] + " ");
+        }
+        System.out.println();
+        for (i = 0; i < size; i++) {
+            if ((nums2[i] % 2) != 0) {
+                nums2[i] = 0;
+            }
+            System.out.print(" " + nums2[i] + " ");
+        }
     }
 }
