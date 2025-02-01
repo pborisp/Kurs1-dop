@@ -75,5 +75,31 @@ public class k1_5 {
         } else {
             System.out.println("Средние арифметические первого и второго массивов равны");
         }
+        System.out.println();
+
+        // Задание 4
+        System.out.println("Задание 4:");
+        int start =10;
+        int end = 99;
+        size = 4;
+        int countPlus = 0;
+        int[] massiv = new int[size];
+        for (i = 0; i < size; i++) {
+            double x = Math.random() * (end - start) + start;
+            massiv[i] = (int) x;
+            System.out.print(" " + massiv[i] + " ");
+            if (i > 0) {
+                if (massiv[i] > massiv[i-1]) {
+                    countPlus++;
+                }
+            }
+        }
+        System.out.println();
+        if (countPlus == (size - 1)) {
+            System.out.println("Массив является строго возрастающей последовательностью.");
+        } else {
+            System.out.println("Массив НЕ является строго возрастающей последовательностью.");
+        }
+        System.out.println();
     }
 }
