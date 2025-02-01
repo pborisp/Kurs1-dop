@@ -101,8 +101,8 @@ public class k1_6 {
         System.out.println("Максимальный элемент массива равен: " + maximum);
         System.out.println();
 
-        // Задание 5
-        System.out.println("Задание 5:");
+        // Задание 6
+        System.out.println("Задание 6:");
         int max2 = 0;
         start = 0;
         end = 9;
