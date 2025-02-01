@@ -101,5 +101,19 @@ public class k1_5 {
             System.out.println("Массив НЕ является строго возрастающей последовательностью.");
         }
         System.out.println();
+
+        // Задание 5
+        System.out.println("Задание 5:");
+        int numFirst = 0;
+        int numSecond = 1;
+        size = 20;
+        int[] numFibo = new int[size];
+        numFibo[0] = numFirst;
+        numFibo[1] = numSecond;
+        System.out.print(" " + numFibo[0] + "  " + numFibo[1] + " ");
+        for (i = 2; i< size; i++) {
+            numFibo[i] = numFibo[i - 1] + numFibo[i - 2];
+            System.out.print(" " + numFibo[i] + " ");
+        }
     }
 }
