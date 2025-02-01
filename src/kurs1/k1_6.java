@@ -33,7 +33,7 @@ public class k1_6 {
         double[] numsDouble = new double[size];
         for (i = 0; i < size; i++) {
             double x = Math.random();
-            numsDouble[i] = Math.ceil(x*100)/100;
+            numsDouble[i] = Math.ceil(x * 100) / 100;
             System.out.print(" " + numsDouble[i] + " ");
         }
         System.out.println();
@@ -75,9 +75,9 @@ public class k1_6 {
         int[][] masX2 = new int[masX][masY];
         for (i = 0; i < masY; i++) {
             for (int j = 0; j < masX; j++) {
-              double x = Math.random() * (end - start) + start;
-              masX2[j][i] = (int) x;
-              System.out.print(" " + masX2[j][i] + " ");
+                double x = Math.random() * (end - start) + start;
+                masX2[j][i] = (int) x;
+                System.out.print(" " + masX2[j][i] + " ");
             }
             System.out.println();
         }
@@ -99,6 +99,46 @@ public class k1_6 {
             System.out.println();
         }
         System.out.println("Максимальный элемент массива равен: " + maximum);
+        System.out.println();
+
+        // Задание 5
+        System.out.println("Задание 5:");
+        int max2 = 0;
+        start = 0;
+        end = 9;
+        masX = 6;
+        masY = 7;
+        maximum = 0;
+        int j;
+        int timeX;
+        int[][] mas3x = new int[masX][masY];
+        for (i = 0; i < masY; i++) {
+            for (j = 0; j < masX; j++) {
+                double x = Math.random() * (end - start) + start;
+                mas3x[j][i] = (int) x;
+                System.out.print(" " + mas3x[j][i] + " ");
+                maximum = Math.max(maximum, mas3x[j][i]);
+            }
+            if (mas3x[0][i] != maximum) {
+                timeX = mas3x[0][i];
+                mas3x[0][i] = maximum;
+                maximum = timeX;
+            }
+            for (j = 1; j < masX; j++) {
+                if (mas3x[j][i] == mas3x[0][i]) {
+                    mas3x[j][i] = maximum;
+                }
+            }
+            System.out.println();
+            maximum = 0;
+        }
+        System.out.println();
+        for (i = 0; i < masY; i++) {
+            for (j = 0; j < masX; j++) {
+                System.out.print(" " + mas3x[j][i] + " ");
+            }
+            System.out.println();
+        }
         System.out.println();
     }
 }
