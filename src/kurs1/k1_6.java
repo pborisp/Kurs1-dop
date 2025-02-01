@@ -101,6 +101,34 @@ public class k1_6 {
         System.out.println("Максимальный элемент массива равен: " + maximum);
         System.out.println();
 
+        // Задание 5
+        System.out.println("Задание 5:");
+        start = -5;
+        end = 5;
+        int j;
+        int XX = 4;
+        int YY = 7;
+        int ind = 0;
+        int rezalt = -300;
+        int mnozhit;
+        int[][] mv = new int[XX][YY];
+        for (i = 0; i < YY; i++) {
+            mnozhit = 1;
+            for (j = 0; j < XX; j++) {
+                double x = Math.random() * (end - start) + start;
+                mv[j][i] = (int) x;
+                System.out.print(" " + mv[j][i] + " ");
+                mnozhit *=  mv[j][i];
+            }
+            if (mnozhit > rezalt) {
+                rezalt = mnozhit;
+                ind = i;
+            }
+            System.out.println();
+        }
+        System.out.println("индекс строки с наибольшим произведением элементов " + ind);
+        System.out.println();
+
         // Задание 6
         System.out.println("Задание 6:");
         int max2 = 0;
@@ -109,7 +137,6 @@ public class k1_6 {
         masX = 6;
         masY = 7;
         maximum = 0;
-        int j;
         int timeX;
         int[][] mas3x = new int[masX][masY];
         for (i = 0; i < masY; i++) {
